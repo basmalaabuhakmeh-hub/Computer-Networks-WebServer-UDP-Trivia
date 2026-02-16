@@ -1,16 +1,6 @@
 # ENCS3320 Computer Networks — Project 1
 
-**ENCS3320 Computer Networks — First Semester 2024–2025**  
 Project 1 covers network commands and Wireshark (Task 1), a TCP socket-based web server with English/Arabic pages (Task 2), and a UDP client–server trivia game (Task 3).
-
----
-
-## Repository name suggestion for GitHub
-
-- **Recommended:** `ENCS3320-Network-Project1-WebServer-Trivia`
-- Alternatives: `Computer-Networks-WebServer-UDP-Trivia` | `ENCS3320-Socket-WebServer-Trivia`
-
----
 
 ## Overview
 

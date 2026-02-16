@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    header h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+/* Team Section Styling */
+.team {
+    margin: 30px 15px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .team h2 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+td.team-member {
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+    td.team-member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    td.team-member p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    td.team-member ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        td.team-member ul li {
+            font-size: 14px;
+            color: #333;
+        }
+
+/* Topic Section Styling */
+.topic {
+    margin: 30px 15px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .topic h2 {
+        font-size: 30px;
+        color: #34495e;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .topic p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .topic strong {
+        font-weight: bold;
+        color: #e67e22;
+    }
+
+    .topic em {
+        font-style: italic;
+        color: #8e44ad;
+    }
+
+    .topic ul, .topic ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #333;
+    }
+
+        .topic ul li, .topic ol li {
+            margin-bottom: 10px;
+        }
+
+            .topic ul li strong, .topic ol li strong {
+                font-weight: bold;
+            }
+
+    .topic img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    footer nav {
+        margin: 0;
+    }
+
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+
+            footer nav a:hover {
+                text-decoration: underline;
+            }

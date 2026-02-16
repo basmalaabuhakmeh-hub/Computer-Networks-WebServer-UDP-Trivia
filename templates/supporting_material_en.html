@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporting Material</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Request Supporting Material</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Request an Image or Video</h2>
+        <p>Enter the name of the image or video you want. If unavailable, you will be redirected to a search page.</p>
+        <form action="/process_request" method="get">
+            <label for="requestType">Choose file type:</label>
+            <select name="fileType" id="requestType" required>
+                <option value="image">Image</option>
+                <option value="video">Video</option>
+            </select>
+
+            <label for="fileName">File name:</label>
+            <input type="text" id="fileName" name="fileName" placeholder="Enter file name" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="main_en.html">Back to Main Page</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المواد المساندة - ENCS3320</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>المواد المساندة لدورة شبكات الكمبيوتر</h1>
+    </header>
+
+    <section class="content">
+        <h2>طلب صورة أو فيديو</h2>
+        <p>يرجى إدخال اسم الملف الذي تبحث عنه (بما في ذلك الامتداد). إذا كان الملف غير متوفر، سيتم إعادة توجيهك إلى صفحة بحث صور جوجل أو يوتيوب.</p>
+
+        <!-- نموذج لتمكين المستخدم من تقديم طلب البحث -->
+        <form id="searchForm" action="/process_request" method="GET">
+            <label for="fileName">أدخل اسم الملف (مع الامتداد، مثال: protocol.png):</label>
+            <input type="text" id="fileName" name="fileName" required placeholder="أدخل اسم الملف مع الامتداد">
+            <br><br>
+
+            <!-- زر الإرسال لبدء عملية البحث -->
+            <button type="submit">بحث</button>
+        </form>
+
+        <!-- رسالة الخطأ التي ستظهر إذا لم يدخل المستخدم اسم الملف -->
+        <p id="errorMessage" style="color: red; display: none;"></p>
+    </section>
+
+    <footer>
+        <nav>
+            <!-- رابط للتنقل للعودة إلى الصفحة الرئيسية -->
+            <a href="ar">العودة إلى الصفحة الرئيسية</a>
+        </nav>
+    </footer>
+</body>
+</html>

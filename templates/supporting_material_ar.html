@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8"> <!-- الترميز الخاص بالصفحة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- التصميم المتجاوب لملائمة الأجهزة المحمولة -->
+    <title>المواد المساندة - ENCS3320</title> <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="../static/css/style.css"> <!-- ربط ملف CSS لتنسيق الصفحة -->
+</head>
+<body>
+    <header>
+        <h1>المواد المساندة لدورة شبكات الكمبيوتر</h1> <!-- العنوان الرئيسي للصفحة -->
+    </header>
+
+    <section class="content">
+        <h2>طلب صورة أو فيديو</h2> <!-- العنوان الفرعي لقسم الطلب -->
+        <p>يرجى إدخال اسم الملف الذي تبحث عنه والمتعلق بموضوع شبكات الكمبيوتر. إذا كان الملف غير متوفر، سيتم إعادة توجيهك إلى صفحة بحث صور جوجل أو يوتيوب.</p>
+
+        <!-- نموذج لتمكين المستخدم من تقديم طلب البحث -->
+        <form id="searchForm" action="/request_media" method="GET">
+            <label for="fileName">أدخل اسم الملف (مثال: بروتوكول HTTP):</label> <!-- التسمية الخاصة بحقل إدخال اسم الملف -->
+            <input type="text" id="fileName" name="fileName" required placeholder="أدخل اسم الملف"> <!-- حقل إدخال اسم الملف -->
+            <br><br>
+
+            <!-- قائمة منسدلة لاختيار نوع الملف الذي يبحث عنه المستخدم -->
+            <label for="fileType">اختر نوع الملف الذي تبحث عنه:</label>
+            <select id="fileType" name="mediaType">
+                <!-- خيارات القائمة المنسدلة للصورة أو الفيديو -->
+                <option value="image">صورة</option> <!-- خيار الصورة -->
+                <option value="video">فيديو</option> <!-- خيار الفيديو -->
+            </select>
+            <br><br>
+
+            <!-- زر الإرسال لبدء عملية البحث -->
+            <button type="submit">بحث</button>
+        </form>
+
+        <!-- رسالة الخطأ التي ستظهر إذا لم يدخل المستخدم اسم الملف -->
+        <p id="errorMessage" style="color: red; display: none;"></p>
+    </section>
+
+    <footer>
+        <nav>
+            <!-- رابط للتنقل للعودة إلى الصفحة الرئيسية -->
+            <a href="ar">العودة إلى الصفحة الرئيسية</a>
+        </nav>
+    </footer>
+</body>
+</html>

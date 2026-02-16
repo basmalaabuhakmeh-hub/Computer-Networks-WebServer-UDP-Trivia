@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خادم ويب ENCS3320 - الشبكات الحاسوبية</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body dir="rtl">
+    <header>
+        <h1>مرحبًا بكم في ENCS3320 - خادم الشبكات الحاسوبية</h1>
+    </header>
+
+    <section class="team">
+        <h2>تعرف على فريقنا</h2>
+        <table>
+            <tr>
+                <td class="team-member">
+                    <img src="basmala.png" alt="صورة بسملة أبو حاكمة">
+                    <p><strong>الاسم:</strong> بسملة أبو حاكمة</p>
+                    <p><strong>الرقم الجامعي:</strong> 1220184</p>
+                    <p><strong>المهارات:</strong> الرياضيات، التفكير الابداعي، مهارات التواصل</p>
+                    <p><strong>المشاريع:</strong></p>
+                    <ul>
+                        <li>Handling populations of distincts using a linked list</li>
+                        <li>Developing undo-redo operation with a stack structure</li>
+                        <li>Hashing project</li>
+                    </ul>
+                </td>
+                <td class="team-member">
+                    <img src="ibrahim.png" alt="صورة إبراهيم صلاحات">
+                    <p><strong>الاسم:</strong> إبراهيم صلاحات</p>
+                    <p><strong>الرقم الجامعي:</strong> 1221701</p>
+                    <p><strong>المهارات:</strong> الموسيقى، القيادة، البرمجة</p>
+                    <p><strong>المشاريع:</strong></p>
+                    <ul>
+                        <li>Developing a control unit in ARM assembly</li>
+                        <li>Handling populations of distincts using a linked list</li>
+                    </ul>
+                </td>
+                <td class="team-member">
+                    <img src="zahraa.png" alt="صورة فاطمة الزهراء مصطفى">
+                    <p><strong>الاسم:</strong> فاطمة الزهراء مصطفى</p>
+                    <p><strong>الرقم الجامعي:</strong> 1220259</p>
+                    <p><strong>المهارات:</strong> حل المشكلات، الرياضيات، التكيف</p>
+                    <p><strong>المشاريع:</strong></p>
+                    <ul>
+                        <li>Handling ADT polynomial operations using linked lists and stacks</li>
+                        <li>Performing various polynomial operations</li>
+                        <li>ARM assembly project</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="topic">
+        <h2>فهم تأخير الشبكة</h2>
+        <p>تأخير الشبكة هو الوقت الذي يستغرقه البيانات للسفر من المصدر إلى الوجهة عبر الشبكة. إنه عامل حاسم يؤثر على أداء التطبيقات الشبكية.</p>
+
+        <p>المصادر الأربعة الرئيسية للتأخير هي:</p>
+        <ol>
+            <li>
+                <strong>تأخير الانتشار:</strong> الوقت الذي يستغرقه الإشارة للانتقال عبر الوسط المادي (مثل الأسلاك أو اللاسلكي) من المرسل إلى المستقبل.
+                <br><img src="propagation_delay.jpg" alt="تأخير الانتشار" class="topic-image">
+            </li>
+            <li>
+                <strong>تأخير النقل:</strong> الوقت المطلوب لإرسال الحزمة بأكملها عبر الشبكة، ويعتمد على حجم الحزمة وعرض النطاق الترددي للشبكة.
+                <br><img src="transmission_delay.jpg" alt="تأخير النقل" class="topic-image">
+            </li>
+            <li>
+                <strong>تأخير الانتظار:</strong> الوقت الذي تقضيه الحزمة في انتظار دورها في قائمة الانتظار لجهاز التوجيه بسبب ازدحام الشبكة أو الحمل الزائد.
+                <br><img src="queuing_delay.jpg" alt="تأخير الانتظار" class="topic-image">
+            </li>
+            <li>
+                <strong>تأخير المعالجة:</strong> الوقت الذي يستغرقه جهاز الشبكة (مثل أجهزة التوجيه) لمعالجة الحزمة، ويشمل ذلك مهام مثل فحص الأخطاء والتوجيه.
+                <br><img src="processing_delay.jpg" alt="تأخير المعالجة" class="topic-image">
+            </li>
+        </ol>
+
+        <p>يتم حساب التأخير الإجمالي للشبكة عن طريق جمع التأخيرات الفردية:</p>
+        <p><strong>d<sub>total</sub> = d<sub>proc</sub> + d<sub>queue</sub> + d<sub>trans</sub> + d<sub>prop</sub></strong></p>
+
+        <p>يمكن قياس التأخيرات في الإنترنت الحقيقية باستخدام أدوات مثل <strong>Traceroute</strong>، والتي تتعقب وقت الرحلة ذهابًا وإيابًا للحزم عبر أجهزة التوجيه. تقيس التأثير التراكمي لتأخيرات المعالجة والانتظار والنقل والانتشار عند كل جهاز توجيه.</p>
+        <br><img src="traceroute.jpg" alt="Traceroute" class="topic-image">
+    </section>
+
+    <footer>
+        <nav>
+            <a href="supporting_material_ar.html">المواد الداعمة</a> |
+            <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">موقع الكتاب</a> |
+            <a href="https://ritaj.birzeit.edu/" target="_blank">ريتا ج</a>
+        </nav>
+    </footer>
+</body>
+</html>

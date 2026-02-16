@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCS3320-Webserver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ENCS3320 - Computer Networks Webserver</h1>
+    </header>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <table>
+            <tr>
+                <td class="team-member">
+                    <img src="basmala.png" alt="Photo of Basmalah Abu Hakma">
+                    <p><strong>Name:</strong> Basmalah Abu Hakma</p>
+                    <p><strong>ID:</strong> 1220184</p>
+                    <p><strong>Skills:</strong> Mathematics, Critical Thinking, Communication Skills</p>
+                    <p><strong>Projects:</strong></p>
+                    <ul>
+                        <li>Handling populations of distincts using a linked list</li>
+                        <li>Developing undo-redo operation with a stack structure</li>
+                        <li>Hashing project</li>
+                    </ul>
+                </td>
+                <td class="team-member">
+                    <img src="ibrahim.png" alt="Photo of Ibrahim Saadah">
+                    <p><strong>Name:</strong> Ibrahim Saadah</p>
+                    <p><strong>ID:</strong> 1221701</p>
+                    <p><strong>Skills:</strong> Music, Leadership, Programming</p>
+                    <p><strong>Projects:</strong></p>
+                    <ul>
+                        <li>Developing a control unit in ARM assembly</li>
+                        <li>Handling populations of distincts using a linked list</li>
+                    </ul>
+                </td>
+                <td class="team-member">
+                    <img src="zahraa.png" alt="Photo of Fatima AL Zahraa Mustafa">
+                    <p><strong>Name:</strong> Fatima AL Zahraa Mustafa</p>
+                    <p><strong>ID:</strong> 1220259</p>
+                    <p><strong>Skills:</strong> Problem Solving, Mathematics, Adaptability</p>
+                    <p><strong>Projects:</strong></p>
+                    <ul>
+                        <li>Handling ADT polynomial operations using linked lists and stacks</li>
+                        <li>Performing various polynomial operations</li>
+                        <li>ARM assembly project</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="topic">
+        <h2>Understanding Network Delay</h2>
+        <p>Network delay is the time it takes for data to travel from the source to the destination across a network. It is a critical factor that affects the performance of networked applications.</p>
+
+        <p>The four main sources of delay are:</p>
+        <ol>
+            <li>
+                <strong>Propagation Delay:</strong> The time it takes for a signal to travel through the physical medium (like cables or wireless) from the sender to the receiver.
+                <br><img src="propagation_delay.jpg" alt="Propagation Delay" class="topic-image">
+            </li>
+            <li>
+                <strong>Transmission Delay:</strong> The time required to send the entire data packet onto the network, determined by the packet size and network bandwidth.
+                <br><img src="transmission_delay.jpg" alt="Transmission Delay" class="topic-image">
+            </li>
+            <li>
+                <strong>Queuing Delay:</strong> The time a packet spends waiting in a router's queue due to network congestion or traffic load.
+                <br><img src="queuing_delay.jpg" alt="Queuing Delay" class="topic-image">
+            </li>
+            <li>
+                <strong>Processing Delay:</strong> The time taken by network devices (like routers) to process the packet, which includes tasks like error checking and routing.
+                <br><img src="processing_delay.jpg" alt="Processing Delay" class="topic-image">
+            </li>
+        </ol>
+
+        <p>The total network delay is calculated by summing the individual delays:</p>
+        <p><strong>d<sub>total</sub> = d<sub>proc</sub> + d<sub>queue</sub> + d<sub>trans</sub> + d<sub>prop</sub></strong></p>
+
+        <p>Real-world internet delays can be measured using tools like <strong>Traceroute</strong>, which tracks the round-trip time for packets to pass through routers. It measures the cumulative effect of processing, queuing, transmission, and propagation delays at each router.</p>
+        <br><img src="traceroute.jpg" alt="Traceroute" class="topic-image">
+    </section>
+
+    <footer>
+        <nav>
+            <a href="supporting_material_en.html">Supporting Material</a> |
+            <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Textbook Website</a> |
+            <a href="https://ritaj.birzeit.edu/" target="_blank">Ritaj</a>
+        </nav>
+    </footer>
+</body>
+</html>
